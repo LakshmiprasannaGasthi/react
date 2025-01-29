@@ -1,0 +1,147 @@
+/* Style for Login Page */
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient background */
+  animation: gradientAnimation 10s ease infinite;
+}
+
+/* Animation for background */
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+  }
+  50% {
+    background: linear-gradient(45deg, #ff6b81, #ff914d);
+  }
+  100% {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+  }
+}
+
+.login-left {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+
+.company-logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.company-description {
+  position: absolute;
+  bottom: 20px; /* Adjusted position to give some space from the bottom */
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow for readability */
+  padding: 0 20px; /* Added padding to prevent the text from touching the edges */
+}
+
+/* Right side: User login form */
+.login-right {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-left: 1px solid #ddd;
+}
+
+.user-icon img {
+  width: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.user-icon img:hover {
+  transform: scale(1.1);
+}
+
+.login-form,
+.otp-form {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-form h2,
+.otp-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6a11cb;
+}
+
+.otp-buttons button {
+  width: 48%;
+  margin: 10px 1%;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.country-box select {
+  padding: 9px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  justify-content: space-between;
+  display: flex;
+}
+
+input[type="text"] {
+  width: 70%;
+  margin-left: 10px;
+}
+
+.otp-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
